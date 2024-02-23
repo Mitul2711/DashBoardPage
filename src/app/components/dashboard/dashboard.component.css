@@ -1,0 +1,98 @@
+.example-card {
+  margin-top: 20px;
+  width: 300px;
+  margin-bottom: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease; 
+}
+
+.example-card:hover {
+  transform: translateY(-5px); 
+}
+
+.example-card:before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  border-radius: 10px;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.singleCard {
+  width: calc(25% - 70px);
+}
+
+.employee {
+  background: linear-gradient(to right, rgb(219, 124, 98), rgb(250, 119, 141));
+}
+
+
+.staff {
+  background: linear-gradient(to right, rgb(103, 197, 229), rgb(131, 116, 213));
+}
+
+
+.leave {
+  background: linear-gradient(to right, rgb(167, 250, 111), rgb(76, 245, 110));
+}
+
+.salary {
+  background: linear-gradient(to right, rgb(227, 229, 67), rgb(239, 202, 70));
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+.imageEm {
+  height: 130px;
+  width: 180px;
+  margin-bottom: 5px;
+}
+
+.imageSf {
+  margin-left: 10px;
+  height: 129px;
+  width: 185px;
+  margin-bottom: 5px;
+}
+
+.imageLe {
+  margin-left: 77px;
+  height: 129px;
+  width: 112px;
+  margin-bottom: 5px;
+}
+
+.link {
+  margin-top: 3px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+a {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  .singleCard {
+      width: calc(50% - 70px); 
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .singleCard {
+      width: calc(100% - 70px); 
+  }
+}
